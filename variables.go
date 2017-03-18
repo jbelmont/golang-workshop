@@ -5,4 +5,9 @@ func variables() {
 	var x = 1
 	y := 2
 	assert(x == y)
+
+	var str string
+	str = "Jane"
+	str2 := "Janet"
+	assert(str == str2)
 }

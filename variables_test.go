@@ -1,8 +1,6 @@
 package workshop
 
-import (
-	"testing"
-)
+import "testing"
 
 func TestVariables(t *testing.T) {
 	variables()
