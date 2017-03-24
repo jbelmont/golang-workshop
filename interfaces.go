@@ -1,0 +1,5 @@
+package workshop
+
+func interfaces() {
+
+}
