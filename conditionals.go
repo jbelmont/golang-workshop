@@ -3,6 +3,7 @@ package workshop
 import (
 	"math"
 	"strconv"
+	"strings"
 )
 
 func conditionals() {
@@ -60,4 +61,13 @@ func conditionals() {
 		otherNum--
 	}
 	assert(otherNum == 4)
+
+	strVal := "The Knowledge"
+
+	// conditional can do an assignment and then have conditional
+	// strings.Contains returns a boolean
+	if ok := strings.Contains(strVal, "Knowledge"); ok {
+		strVal += " is there"
+	}
+	assert(strVal == "The Knowledge is there")
 }
