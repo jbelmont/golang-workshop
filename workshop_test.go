@@ -10,6 +10,7 @@ func TestConditionals(t *testing.T) {
 	conditionals()
 	loops()
 	pointers()
+	maps()
 	structs()
 	interfaces()
 
