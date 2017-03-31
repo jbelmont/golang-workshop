@@ -2,7 +2,6 @@ package workshop
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -78,11 +77,10 @@ func files() {
 	if err9 != nil {
 		log.Fatal(err9)
 	}
-	fmt.Printf("%s\n", string(fileJSON))
 
-	var jsontype Data
+	jsontype := Data{}
 	json.Unmarshal(fileJSON, &jsontype)
-	fmt.Printf("Results: %v\n", jsontype)
+	assert(jsontype.Results["names"] != nil)
 
 	file.Close()
 }

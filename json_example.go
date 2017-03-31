@@ -3,7 +3,6 @@ package workshop
 import (
 	"encoding/json"
 	"fmt"
-	"reflect"
 	"strconv"
 )
 
@@ -65,7 +64,7 @@ func jsonExamples() {
 	if err3 != nil {
 		panic(err3)
 	}
-	for idx, value := range parsed2 {
+	for _, value := range parsed2 {
 		switch value.(type) {
 		case []interface{}:
 			expectedNestedSlice := map[string]interface{}{
@@ -76,10 +75,10 @@ func jsonExamples() {
 			_, ok2 := expectedNestedSlice["names"].([]interface{})
 			assert(ok != ok2)
 		case map[string]interface{}:
-			fmt.Println(idx, value)
-			fmt.Println(reflect.TypeOf(value))
+			val := value.(map[string]interface{})["secret"]
+			assert(val == "12345abcdef")
 		default:
-			fmt.Println("no matches")
+			fmt.Println("")
 		}
 	}
 
