@@ -1,6 +1,6 @@
 # Golang Basics and Testing
 
-* [Getting Started](docs/summary.md)
+* [README](/README.md)
 * [Lessons](docs/lessons/summary.md)
     * [Variables](docs/lessons/variables.md)
     * [Conditionals](docs/lessons/conditionals.md)
