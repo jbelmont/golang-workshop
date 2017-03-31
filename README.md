@@ -50,3 +50,21 @@ Install Go extension by clicking extension icon and type go in the market place 
 
 * The extension will prompt you to install some missing packages you should do this 
 * Lint, Formatting, and more will be done by the EDITOR
+
+### Workshop Koans
+
+I have created a set of practice koans for everyone to do
+Koans are basically tests that are failing that you need to get passing
+
+1. `cd $GOPATH/src/github.com/${name}`
+2. Run `git clone https://github.com/jbelmont/golang-basics-and-testing.git` in order to install the repository
+3. Run `go test` in order to see the first failing koan
+4. You should see filename and line number where the koan is failing. Try to make it pass
+
+### Practice
+
+Inside the practice folder are a couple of exercises for you to try if you have time remaining
+
+### Documentation
+
+I have added documentation for you to read at your leisure with different GO topics in the [GITBOOK](https://jbelmont.github.io/golang-basics-and-testing/)
