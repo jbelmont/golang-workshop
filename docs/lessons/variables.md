@@ -65,4 +65,4 @@ type Data struct{} // nil
 func someFunc() {} // nil
 ```
 
-[Variables](https://play.golang.org/p/ZwaSvq5oc2)
+[Variables Playground](https://play.golang.org/p/ZwaSvq5oc2)
