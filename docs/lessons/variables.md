@@ -21,3 +21,7 @@ func printName(name string) string {
     return modName
 }
 ```
+
+## Naming variables
+
+* Names must start with a letter and may contain letters, numbers or the _ (underscore) symbol
