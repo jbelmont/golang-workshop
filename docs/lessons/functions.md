@@ -1,5 +1,7 @@
 # Functions
 
+[Functions Go Specification](https://golang.org/ref/spec#Function_types)
+
 * A function lets us wrap up a sequence of statements as a unit that can be called from elsewhere in a program
     * Sometimes a function is used repeatedly but not always
 
@@ -91,4 +93,6 @@ func summationRecursion(number int) int {
 
 Here is an example of recursion in Golang
 
-**Remember with recursion there must exist a base case condition so that you do not run into an infinite call stack**
+*Remember with recursion there must exist a base case condition to prevent an infinite call stack*
+
+[Functions Playground](https://play.golang.org/p/UVy64iu-Ko)

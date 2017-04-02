@@ -1,5 +1,7 @@
 # Conditionals
 
+[If Go Specification](https://golang.org/ref/spec#If_statements)
+
 Golang has control structures as you may have seen them in other programming languages
 
 You just won't see parenthesis `()` around them
@@ -57,6 +59,8 @@ Notice here we assign a variable named ok and then if ok is true it will enter t
 #### Switch statement
 
 Golang also has a `switch` statement which can be used like this
+
+[Switch Go Specification](https://golang.org/ref/spec#Switch_statements)
 
 ```go
 var food string = "lemons"

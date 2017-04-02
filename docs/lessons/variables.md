@@ -1,5 +1,7 @@
 # Variables
 
+[Variables Go Specification](https://golang.org/ref/spec#Variables)
+
 Variables in Go can be declared and initialized in several different ways.
 
 Declare variable with `var` keyword
