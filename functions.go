@@ -3,6 +3,8 @@ package workshop
 import (
 	"errors"
 	"log"
+	"math"
+	"strconv"
 )
 
 func add2Numbers(x, y int) int {
@@ -33,6 +35,31 @@ func giveErrorIfEmpty(str string) (string, error) {
 		return str, error
 	}
 	return str, nil
+}
+
+func hypotenuse(x, y float64) float64 {
+	return math.Sqrt(x*x + y*y)
+}
+
+func summation(args ...int) int {
+	sum := 0
+	for _, val := range args {
+		sum += val
+	}
+	return sum
+}
+
+func format2DecimalPlaces(num float64) string {
+	str := strconv.FormatFloat(num, 'f', 2, 64)
+	return str
+}
+
+func distanceOfLine(x1, y1, x2, y2 float64) func() string {
+	var distance float64
+	return func() string {
+		distance = math.Sqrt(math.Pow(x2-x1, 2) + math.Pow(y2-y1, 2))
+		return format2DecimalPlaces(distance)
+	}
 }
 
 func functions() {
@@ -71,4 +98,16 @@ func functions() {
 		log.Fatal(err)
 	}
 	assert(str == "hello")
+
+	hyp := hypotenuse(3, 4)
+	assert(hyp == 5)
+
+	sum1 := summation(1, 2, 3)
+	assert(sum1 == 6)
+
+	sum2 := summation()
+	assert(sum2 == 0)
+
+	distance := distanceOfLine(3, 4, 5, 6)
+	assert(distance() == "2.83")
 }
