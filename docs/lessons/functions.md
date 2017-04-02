@@ -91,4 +91,4 @@ func summationRecursion(number int) int {
 
 Here is an example of recursion in Golang
 
-**Remeber with recursion there must exist a base case condition so that you do not run into an infinite call stack**
+**Remember with recursion there must exist a base case condition so that you do not run into an infinite call stack**
