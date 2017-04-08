@@ -12,5 +12,5 @@
 * [Pointers](docs/lessons/pointers.md)
 * [Maps](docs/lessons/maps.md)
 * [Files](docs/lessons/files.md)
-* [Testing](docs/lesson/testing.md)
-* [Practice](docs/lesson/practice.md)
+* [Testing](docs/lessons/testing.md)
+* [Practice](docs/lessons/practice.md)
