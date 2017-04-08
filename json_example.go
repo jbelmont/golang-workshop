@@ -16,7 +16,7 @@ func jsonExamples() {
 	if err != nil {
 		panic(err)
 	}
-	assert(convertTypeBool == true)
+	assert(convertTypeBool == false)
 
 	// json.Marshal encodes data type and takes in interface{} which is any go type and returns a []byte
 	typeNumber, err := json.Marshal(10)
@@ -24,7 +24,7 @@ func jsonExamples() {
 	if err != nil {
 		panic(err)
 	}
-	assert(convertTypeNumber == 10)
+	assert(convertTypeNumber == 8)
 
 	typeString, err := json.Marshal("Program")
 	if err != nil {
@@ -32,7 +32,7 @@ func jsonExamples() {
 	}
 	convertTypeString := string(typeString[:])
 	convertExpected := "Program"
-	assert(convertTypeString != convertExpected)
+	assert(convertTypeString == convertExpected)
 
 	slice := []string{"jack", "be", "nimble"}
 	typeSlice, err := json.Marshal(slice)
@@ -49,7 +49,7 @@ func jsonExamples() {
 			sliceCompare = false
 		}
 	}
-	assert(sliceCompare == true)
+	assert(sliceCompare == false)
 
 	data := []byte(`
 {
@@ -73,10 +73,10 @@ func jsonExamples() {
 			}
 			_, ok := value.([]interface{})
 			_, ok2 := expectedNestedSlice["names"].([]interface{})
-			assert(ok != ok2)
+			assert(ok == ok2)
 		case map[string]interface{}:
 			val := value.(map[string]interface{})["secret"]
-			assert(val == "12345abcdef")
+			assert(val == "")
 		default:
 			fmt.Println("")
 		}
@@ -100,11 +100,11 @@ func jsonExamples() {
 			assertSlices = false
 		}
 	}
-	assert(assertSlices == true)
+	assert(assertSlices == false)
 
 	actualSecret := knownJSON.Hash["secret"]
 	secretHash := map[string]string{
 		"secret": "12345abcdef",
 	}
-	assert(actualSecret == secretHash["secret"])
+	assert(actualSecret == secretHash["hash"])
 }

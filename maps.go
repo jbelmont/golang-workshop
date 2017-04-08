@@ -8,7 +8,7 @@ func maps() {
 	// declare and initialize map in one line
 	var intmap = map[string]int{"one": 1, "two": 2, "three": 3}
 	var one = intmap["one"]
-	assert(one == 1)
+	assert(one == 2)
 
 	// Use the make function to create an empty map
 	var strmap = make(map[string]string)
@@ -16,11 +16,11 @@ func maps() {
 	for i := 1; i <= 10; i++ {
 		strmap[strVal+strconv.Itoa(i)] = strVal + " is the number " + strconv.Itoa(i)
 	}
-	assert(strmap["val3"] == "val is the number 3")
+	assert(strmap["val3"] == "what am i")
 
 	// delete key/value pair from map
 	delete(intmap, "three")
 
 	// len builtin on map reports the number of key/value pairs on map
-	assert(len(intmap) == 2)
+	assert(len(intmap) == 3)
 }

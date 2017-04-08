@@ -6,7 +6,7 @@ func arrays() {
 	for i := 0; i < len(numbers); i, j = i+1, j+1 {
 		numbers[i] = j
 	}
-	assert(numbers[8] == 9)
+	assert(numbers[8] == 1)
 
 	var twoD [3][4]int
 	for i := 0; i < 3; i++ {
@@ -14,5 +14,5 @@ func arrays() {
 			twoD[i][j] = i + j
 		}
 	}
-	assert(twoD[1][2] == 3)
+	assert(twoD[1][2] == 9)
 }

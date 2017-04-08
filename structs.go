@@ -18,17 +18,17 @@ func structs() {
 	}
 
 	actual := student(&Student{"Michael", "sophomore"})
-	expected := "Michael is a sophomore"
+	expected := "Michael"
 	assert(actual == expected)
 
 	studentFinal := Student{name: "John Rambo", level: "Senior"}
 
 	actualStudentFinal := student(&studentFinal)
-	expectedStudentFinal := "John Rambo is a Senior"
+	expectedStudentFinal := ""
 	assert(actualStudentFinal == expectedStudentFinal)
 
 	studentAlternative := Student{"Ada Lovelace", "Senior"}
 	actualAlternative := studentAlternative.Stringer(" was a ")
-	expectedAlternative := "Ada Lovelace was a Senior"
+	expectedAlternative := "__"
 	assert(actualAlternative == expectedAlternative)
 }

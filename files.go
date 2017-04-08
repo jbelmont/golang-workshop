@@ -22,7 +22,7 @@ func files() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	assert(soldiersTxt.Name() == "soldiers.txt")
+	assert(soldiersTxt.Name() == "this.txt")
 	soldiersTxt.Close()
 
 	originalPath := "soldiers.txt"
@@ -36,13 +36,13 @@ func files() {
 	if err3 != nil {
 		log.Fatal(err3)
 	}
-	assert(err3 == nil)
+	assert(err3 != nil)
 
 	soldiers, err4 := os.Create("soldiers.txt")
 	if err4 != nil {
 		log.Fatal(err)
 	}
-	assert(soldiers.Name() == "soldiers.txt")
+	assert(soldiers.Name() == "")
 
 	file, err := os.OpenFile("soldiers.txt", os.O_APPEND, 0777)
 	if err != nil {
@@ -53,7 +53,7 @@ func files() {
 	if err5 != nil {
 		log.Fatal(err5)
 	}
-	assert(err5 == nil)
+	assert(err5 != nil)
 	err6 := os.Link("soldiers.txt", "soldiers_also.txt")
 	if err6 != nil {
 		log.Fatal(err6)
@@ -64,14 +64,14 @@ func files() {
 	if err7 != nil {
 		log.Fatal(err7)
 	}
-	assert(err7 == nil)
+	assert(err7 != nil)
 
 	lines := []byte("I am a string\nWhat is the string\nNever is the string")
 	err8 := ioutil.WriteFile("soldiers.txt", lines, 0644)
 	if err8 != nil {
 		log.Fatal(err8)
 	}
-	assert(err8 == nil)
+	assert(err8 != nil)
 
 	fileJSON, err9 := ioutil.ReadFile("data.json")
 	if err9 != nil {
@@ -80,7 +80,7 @@ func files() {
 
 	jsontype := Data{}
 	json.Unmarshal(fileJSON, &jsontype)
-	assert(jsontype.Results["names"] != nil)
+	assert(jsontype.Results["names"] == nil)
 
 	file.Close()
 }

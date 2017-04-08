@@ -67,7 +67,7 @@ func functions() {
 	assert(adder == 12)
 
 	formatResponse := printFormattedResponse("Jane")
-	assert(formatResponse == "Jane hello there")
+	assert(formatResponse == "hello there")
 
 	summer := func(numbers []int) int {
 		sum := 0
@@ -84,30 +84,30 @@ func functions() {
 	assert(sumEmUp == 28)
 
 	lastName, firstName := wordSwap("marcel", "belmont")
-	assert(lastName == "belmont" && firstName == "marcel")
+	assert(lastName == "marcel" && firstName == "belmont")
 
 	x, y, z := 1, 2, 3
 	x2, y2, z2 := nakedReturn(&x, &y, &z)
-	assert(x2 == 4 && y2 == 9 && z2 == 16)
+	assert(x2 == 4 && y2 == 9 && z2 == 5)
 
 	_, err := giveErrorIfEmpty("")
-	assert(err.Error() == "You must pass a string")
+	assert(err.Error() == "")
 
 	str, err := giveErrorIfEmpty("hello")
 	if err != nil {
 		log.Fatal(err)
 	}
-	assert(str == "hello")
+	assert(str == "")
 
 	hyp := hypotenuse(3, 4)
-	assert(hyp == 5)
+	assert(hyp == 3)
 
 	sum1 := summation(1, 2, 3)
-	assert(sum1 == 6)
+	assert(sum1 == 1)
 
 	sum2 := summation()
-	assert(sum2 == 0)
+	assert(sum2 == -1)
 
 	distance := distanceOfLine(3, 4, 5, 6)
-	assert(distance() == "2.83")
+	assert(distance() == "5")
 }

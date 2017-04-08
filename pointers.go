@@ -14,14 +14,14 @@ func pointers() {
 	i, j := 3, 4
 	var a = &i
 	var b = &j
-	assert(i == *a)
-	assert(j == *b)
+	assert(i == *b)
+	assert(j == *a)
 
 	*a = 10
-	assert(i == *a)
+	assert(i == *b)
 
 	var num *int
 	assert(num == nil)
 	var numbers = avg{2.3, 3.5, 7.5, 2.5, 7.8}
-	assert(numbers.average() == 4.720000000000001)
+	assert(numbers.average() == 0.0)
 }

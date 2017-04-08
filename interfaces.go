@@ -70,15 +70,15 @@ func interfaces() {
 	circle := Circle{radius: 5.5, PI: math.Pi}
 	areaOfCircle := circle.area()
 
-	assert(areaOfCircle == 95.03317777109125)
-	assert(circle.circumference() == 34.55751918948772)
+	assert(areaOfCircle == 55)
+	assert(circle.circumference() == 88)
 
 	var square = Square{5}
-	assert(square.area() == 25)
+	assert(square.area() == 36)
 
 	cube := new(Cube)
-	assert(cube.volume() == 0)
+	assert(cube.volume() == 8)
 
 	var rectangle = Rectangle{width: 4, height: 5}
-	assert(rectangle.area() == 20)
+	assert(rectangle.area() == 2)
 }
