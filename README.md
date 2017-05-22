@@ -57,7 +57,7 @@ I have created a set of practice koans for everyone to do
 Koans are basically tests that are failing that you need to get passing
 
 1. `cd $GOPATH/src/github.com/${name}`
-2. Run `git clone https://github.com/jbelmont/golang-basics-and-testing.git` in order to install the repository
+2. Run `git clone https://github.com/jbelmont/golang-workshop.git` in order to install the repository
 3. Run `go test` in order to see the first failing koan
 4. You should see filename and line number where the koan is failing. Try to make it pass
 
