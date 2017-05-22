@@ -2,7 +2,7 @@
 
 Learning New Programming Languages First Workshop on Golang
 
-Read the [Golang GitBook](https://jbelmont.github.io/golang-basics-and-testing/)
+Read the [Golang GitBook](https://jbelmont.github.io/golang-workshop)
 
 ### Install Go
 
@@ -67,4 +67,4 @@ Inside the practice folder are a couple of exercises for you to try if you have 
 
 ### Documentation
 
-I have added documentation for you to read at your leisure with different GO topics in the [GITBOOK](https://jbelmont.github.io/golang-basics-and-testing/)
+I have added documentation for you to read at your leisure with different GO topics in the [GITBOOK](https://jbelmont.github.io/golang-workshop)
