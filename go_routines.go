@@ -11,7 +11,7 @@ func blockingPrint(messages []string) {
 	}
 }
 
-func routines() {
+func goRoutines() {
 	var wg sync.WaitGroup
 
 	// you can also add these one at
