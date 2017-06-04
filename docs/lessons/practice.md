@@ -9,6 +9,8 @@ Exercise 1:
 Write a function that computes the standard deviation using a closure and formats the number using 2 decimal places.
 Write a test function to test the newly created function.
 
+[Exercise Solution](https://play.golang.org/p/LeQLXHUrmW)
+
 Exercise 2:
 
 Write a function that reads the `service_plans.json` file and formats the json into Golang types
@@ -47,6 +49,30 @@ Please use the following `struct` to help you along
 
 Also write a test file to test this.
 
+Steps to see solution
+
+1. `cd json_manipulation`
+2. Open `json_manipulation.go` and `json_manipulation_test.go`
+3. Run `go test`
+
 Exercise 3:
 
 Write a recursive function that sums up the values of an integer along with a test.
+
+[Exercise Solution](https://play.golang.org/p/Uu8TGQ2qDM)
+
+Exercise 4:
+
+Write a function using callbacks that filters a list of ints
+
+[Exercise Solution](https://play.golang.org/p/cRmZByNXMR)
+
+Exercise 5:
+
+Write a function in its own package that reverses a string and write a test for it.
+
+Steps to see solution:
+
+1. `cd reverse`
+2. Open `reverse.go` and `reverse_test.go`
+3. Run `go test`

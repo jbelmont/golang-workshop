@@ -13,10 +13,6 @@ func blockingPrint(messages []string) {
 
 func goRoutines() {
 	var wg sync.WaitGroup
-
-	// you can also add these one at
-	// a time if you need to
-
 	wg.Add(1)
 
 	messages := []string{

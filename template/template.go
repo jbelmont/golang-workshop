@@ -1,4 +1,4 @@
-package workshop
+package template
 
 import (
 	"log"
@@ -19,7 +19,7 @@ func init() {
 	tpl = template.Must(template.ParseFiles("users.html"))
 }
 
-func templates() {
+func templates() string {
 	p := person{
 		Name:   "John Rambo",
 		Age:    37,
@@ -31,5 +31,5 @@ func templates() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	assert(p.Name == "Chuck Norris")
+	return p.Name
 }
