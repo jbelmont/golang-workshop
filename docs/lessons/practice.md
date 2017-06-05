@@ -76,3 +76,15 @@ Steps to see solution:
 1. `cd reverse`
 2. Open `reverse.go` and `reverse_test.go`
 3. Run `go test`
+
+Exercise 6:
+
+Write a function that queries Github Api for users and finds the repos with the most stargazers
+
+Steps to see solution:
+
+1. `cd flatten`
+2. Open `flatten.go` and `flatten_test.go`
+3. Run `go test`
+
+[Go Playground Solution](https://play.golang.org/p/9HwlKyIcmS)
