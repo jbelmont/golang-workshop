@@ -17,6 +17,6 @@
 * [Go Routines](docs/lessons/go_routines.md)
 * [Callbacks](docs/lessons/callbacks.md)
 * [Templates](docs/lessons/templates.md)
-* [Testing](docs/lessons/testing.md)
 * [Packages](docs/lessons/packages.md)
+* [Testing](docs/lessons/testing.md)
 * [Practice](docs/lessons/practice.md)
