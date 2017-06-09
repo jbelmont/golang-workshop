@@ -18,4 +18,5 @@
 * [Callbacks](docs/lessons/callbacks.md)
 * [Templates](docs/lessons/templates.md)
 * [Testing](docs/lessons/testing.md)
+* [Packages](docs/lessons/packages.md)
 * [Practice](docs/lessons/practice.md)
