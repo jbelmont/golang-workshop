@@ -1,0 +1,561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="arrays.html" />
+    
+    
+    <link rel="prev" href="loops.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="variables.html">
+            
+                <a href="variables.html">
+            
+                    
+                    Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="conditionals.html">
+            
+                <a href="conditionals.html">
+            
+                    
+                    Conditionals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="loops.html">
+            
+                <a href="loops.html">
+            
+                    
+                    Loops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="functions.html">
+            
+                <a href="functions.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="arrays.html">
+            
+                <a href="arrays.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Slices.html">
+            
+                <a href="Slices.html">
+            
+                    
+                    Slices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="pointers.html">
+            
+                <a href="pointers.html">
+            
+                    
+                    Pointers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="maps.html">
+            
+                <a href="maps.html">
+            
+                    
+                    Maps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="structs.html">
+            
+                <a href="structs.html">
+            
+                    
+                    Structs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="interfaces.html">
+            
+                <a href="interfaces.html">
+            
+                    
+                    Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="files.html">
+            
+                <a href="files.html">
+            
+                    
+                    Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="channels.html">
+            
+                <a href="channels.html">
+            
+                    
+                    Channels
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="go_routines.html">
+            
+                <a href="go_routines.html">
+            
+                    
+                    Go Routines
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="variadic_functions.html">
+            
+                <a href="variadic_functions.html">
+            
+                    
+                    Variadic Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="callbacks.html">
+            
+                <a href="callbacks.html">
+            
+                    
+                    Callbacks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="templates.html">
+            
+                <a href="templates.html">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    Packages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="practice.html">
+            
+                <a href="practice.html">
+            
+                    
+                    Practice
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="functions">Functions</h1>
+<p><a href="https://golang.org/ref/spec#Function_types" target="_blank">Functions Go Specification</a></p>
+<ul>
+<li>A function lets us wrap up a sequence of statements as a unit that can be called from elsewhere in a program<ul>
+<li>Sometimes a function is used repeatedly but not always</li>
+</ul>
+</li>
+</ul>
+<p>Example function declaration</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> name(parameter-list) (result-list) {
+    body
+}
+</code></pre>
+<ul>
+<li>declare a function in Go by using the keyword <code>func</code></li>
+<li>name the function using legal names<ul>
+<li>The spec says that func, var or const name must begin with (unicode<em>letter or </em>)</li>
+<li>and can end with many (unicode<em>letter, unicode_digit or </em>)</li>
+<li>The blank identifier, represented by the underscore character _, may be used in a declaration like any other identifier but the declaration does not introduce a new binding.</li>
+</ul>
+</li>
+<li>The parameter list specifies the names and types of the function&#x2019;s parameters,<ul>
+<li>These are local variables whose values or arguments are supplied by the caller of the function</li>
+</ul>
+</li>
+<li>If the function returns one unnamed result or no results at all, parentheses are optional and usually omitted</li>
+</ul>
+<h2 id="multiple-return-values">Multiple Return Values</h2>
+<p>Functions in Golang can return multiple values</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> giveErrorIfEmpty(str <span class="hljs-keyword">string</span>) (<span class="hljs-keyword">string</span>, error) {
+    <span class="hljs-keyword">if</span> str == <span class="hljs-string">&quot;&quot;</span> {
+        error := errors.New(<span class="hljs-string">&quot;You must pass a string&quot;</span>)
+        <span class="hljs-keyword">return</span> str, error
+    }
+    <span class="hljs-keyword">return</span> str, <span class="hljs-literal">nil</span>
+}
+</code></pre>
+<p>This function returns either the passed <code>str</code> parameter and <code>nil</code> error or <code>str</code> with an <code>error</code></p>
+<h2 id="variadic-functions">Variadic Functions</h2>
+<p>A variadic function is one that can be called with varying numbers of arguments.</p>
+<ul>
+<li>To declare a variadic function, the type of the final parameter is preceded by an ellipsis, <code>...</code></li>
+<li>This indicates that the function may be called with any number of arguments of the provided type</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> summation(args ...<span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
+    sum := <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> _, val := <span class="hljs-keyword">range</span> args {
+        sum += val
+    }
+    <span class="hljs-keyword">return</span> sum
+}
+</code></pre>
+<p><code>summation</code> can take 0 or more arguments of integer values and will sum up those values</p>
+<h2 id="anonymous-functions">Anonymous Functions</h2>
+<ul>
+<li>A function literal is written like a function declaration, but without a name following the func keyword.</li>
+<li>A function literal is an expression, and its value is called an anonymous function.</li>
+<li>Functions defined in this way have access to the entire lexical environment,</li>
+<li>so the inner function can refer to variables from the enclosing function<ul>
+<li>Otherwise known as a closure</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> distanceOfLine(x1, y1, x2, y2 <span class="hljs-keyword">float64</span>) <span class="hljs-keyword">func</span>() <span class="hljs-keyword">string</span> {
+    <span class="hljs-keyword">var</span> distance <span class="hljs-keyword">float64</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">func</span>() <span class="hljs-keyword">string</span> {
+        distance = math.Sqrt(math.Pow(x2-x1, <span class="hljs-number">2</span>) + math.Pow(y2-y1, <span class="hljs-number">2</span>))
+        <span class="hljs-keyword">return</span> format2DecimalPlaces(distance)
+    }
+}
+</code></pre>
+<p>The function <code>distanceOfLine</code> has an anonymous function inside of it
+The variable distance is available to the inner function and one of the advantages of closures is they retain <code>state</code></p>
+<h2 id="recursion">Recursion</h2>
+<p>Functions may be recursive, that is, they may call themselves, either directly or indirectly.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> summationRecursion(number <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span> {
+    <span class="hljs-keyword">if</span> number &gt; <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">return</span> number + summationRecursion(number<span class="hljs-number">-1</span>)
+    }
+    <span class="hljs-keyword">return</span> number
+}
+</code></pre>
+<p>Here is an example of recursion in Golang</p>
+<p><em>Remember with recursion there must exist a base case condition to prevent an infinite call stack</em></p>
+<p><a href="https://play.golang.org/p/twEJHvYBlz" target="_blank">Functions Playground</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="loops.html" class="navigation navigation-prev " aria-label="Previous page: Loops">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="arrays.html" class="navigation navigation-next " aria-label="Next page: Arrays">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Functions","level":"1.5","depth":1,"next":{"title":"Arrays","level":"1.6","depth":1,"path":"docs/lessons/arrays.md","ref":"docs/lessons/arrays.md","articles":[]},"previous":{"title":"Loops","level":"1.4","depth":1,"path":"docs/lessons/loops.md","ref":"docs/lessons/loops.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/lessons/functions.md","mtime":"2017-06-10T19:55:22.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-10T20:13:14.481Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
