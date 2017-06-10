@@ -13,13 +13,13 @@ func conditionals() {
 	if flag {
 		str = "Righteous Path"
 	}
-	assert(str == "")
+	assert(str == "Righteous Path")
 
 	var value int
 	if value < 10 {
 		value = 10
 	}
-	assert(value == 0)
+	assert(value == 10)
 
 	value2 := 7
 	if value2 > 10 {
@@ -27,7 +27,7 @@ func conditionals() {
 	} else {
 		value2--
 	}
-	assert(value2 == 7)
+	assert(value2 == 6)
 
 	const movie = "Rocky"
 	var score int
@@ -38,7 +38,7 @@ func conditionals() {
 	} else {
 		score = 6
 	}
-	assert(score == 9)
+	assert(score == 10)
 
 	const food = "Pizza"
 	var drink string
@@ -50,7 +50,7 @@ func conditionals() {
 	default:
 		drink = "Milkshake"
 	}
-	assert(drink == "Sandwich")
+	assert(drink == "Milkshake")
 
 	rem := math.Mod(6, 5) == 1
 	assert(rem == true)
@@ -60,7 +60,7 @@ func conditionals() {
 	if err == nil {
 		otherNum--
 	}
-	assert(otherNum == -1)
+	assert(otherNum == 4)
 
 	strVal := "The Knowledge"
 
@@ -69,5 +69,5 @@ func conditionals() {
 	if ok := strings.Contains(strVal, "Knowledge"); ok {
 		strVal += " is there"
 	}
-	assert(strVal == "The Knowledge")
+	assert(strVal == "The Knowledge is there")
 }
