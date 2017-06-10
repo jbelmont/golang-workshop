@@ -8,7 +8,7 @@
 There are major differences between the ways arrays work in Go and C languages
 * Arrays are values. Assigning one array to another copies all the elements.
 * If you pass an array to a function, it will receive a copy of the array, not a pointer to it.
-* The size of an array is part of its type. 
+* The size of an array is part of its type.
     * The types [10]int and [20]int are distinct
 
 An array is a numbered sequence of elements of a single type with a fixed length.
@@ -28,4 +28,4 @@ If I were to assign another value `numbers[5] = 6` I would see the following err
 
 `invalid array index 5 (out of bounds for 5-element array)`
 
-[Arrays Playground](https://play.golang.org/p/YP_AJM7kEl)
+[Arrays Playground](https://play.golang.org/p/a5nTP6ZI_R)

@@ -14,11 +14,11 @@ func name(parameter-list) (result-list) {
 ```
 
 * declare a function in Go by using the keyword `func`
-* name the function using legal names 
+* name the function using legal names
     * The spec says that func, var or const name must begin with (unicode_letter or _)
     * and can end with many (unicode_letter, unicode_digit or _)
     * The blank identifier, represented by the underscore character _, may be used in a declaration like any other identifier but the declaration does not introduce a new binding.
-* The parameter list specifies the names and types of the function’s parameters, 
+* The parameter list specifies the names and types of the function’s parameters,
     * These are local variables whose values or arguments are supplied by the caller of the function
 * If the function returns one unnamed result or no results at all, parentheses are optional and usually omitted
 
@@ -59,9 +59,9 @@ func summation(args ...int) int {
 
 ## Anonymous Functions
 
-* A function literal is written like a function declaration, but without a name following the func keyword. 
+* A function literal is written like a function declaration, but without a name following the func keyword.
 * A function literal is an expression, and its value is called an anonymous function.
-* Functions defined in this way have access to the entire lexical environment, 
+* Functions defined in this way have access to the entire lexical environment,
 * so the inner function can refer to variables from the enclosing function
     * Otherwise known as a closure
 
@@ -95,4 +95,4 @@ Here is an example of recursion in Golang
 
 *Remember with recursion there must exist a base case condition to prevent an infinite call stack*
 
-[Functions Playground](https://play.golang.org/p/UVy64iu-Ko)
+[Functions Playground](https://play.golang.org/p/twEJHvYBlz)

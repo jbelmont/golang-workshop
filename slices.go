@@ -6,16 +6,16 @@ func slices() {
 	for i := 0; i < len(sliceNames); i++ {
 		sliceNames[i] = names[i]
 	}
-	assert(sliceNames[2] == "Robin")
+	assert(sliceNames[2] == "Margaret")
 
 	var newSlice = append(sliceNames, "John")
-	assert(len(newSlice) == 5)
+	assert(len(newSlice) == 6)
 
 	var copyNewSlice = make([]string, len(newSlice))
 	copy(copyNewSlice, newSlice)
-	assert(len(newSlice) == 0)
+	assert(len(newSlice) == len(copyNewSlice))
 
 	subIndexSlice := copyNewSlice[:3]
 	subIndexAgain := copyNewSlice[2:4]
-	assert(subIndexSlice[2] == subIndexAgain[2])
+	assert(subIndexSlice[2] == subIndexAgain[0])
 }
